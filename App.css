@@ -1,0 +1,214 @@
+/* Estilos globales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+.header .navbar {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header .navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.header .nav-link {
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.header .nav-link:hover {
+  color: #f0f0f0;
+}
+
+/* Footer */
+.footer {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+.footer a.footer-link {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer a.footer-link:hover {
+  color: #cccccc;
+  text-decoration: none;
+}
+
+/* Landing Page */
+.landing-page {
+  text-align: center;
+  background: linear-gradient(135deg, #f0f0f0, #ffffff);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-page h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.landing-page p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.landing-page .btn {
+  font-size: 1rem;
+  padding: 10px 20px;
+}
+
+/* Barra de búsqueda */
+.search-bar {
+  max-width: 400px;
+  margin: 0 auto 20px auto;
+}
+
+.search-bar .form-control {
+  border-radius: 20px;
+  padding: 10px 15px;
+  font-size: 1rem;
+}
+
+.search-bar .form-control:focus {
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  border-color: #007bff;
+}
+
+/* Product List */
+.product-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-item .card-title {
+  font-weight: bold;
+  color: #333;
+}
+
+.product-item .card-text {
+  color: #666;
+}
+
+/* Imágenes en la lista de productos */
+.product-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+/* Formulario de cantidad */
+.product-item .form-control,
+.book-detail .form-control {
+  max-width: 60px;
+  display: inline-block;
+  text-align: center;
+  padding: 0.375rem 0.5rem;
+}
+
+.product-item .btn,
+.book-detail .btn {
+  font-size: 0.9rem;
+}
+
+.product-item .btn-outline-secondary,
+.book-detail .btn-outline-secondary {
+  font-size: 0.8rem;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.product-item .d-flex.align-items-center,
+.book-detail .d-flex.align-items-center {
+  gap: 10px;
+}
+
+/* Book Details */
+.book-detail .card {
+  border: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.book-detail .card-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.book-detail .card-text {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Imagen destacada en la página de detalles */
+.book-detail img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+/* Carrito */
+.cart .list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart .btn-danger {
+  font-size: 0.8rem;
+}
+
+/* General Buttons */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
